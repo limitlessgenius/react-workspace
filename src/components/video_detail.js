@@ -4,12 +4,13 @@ const VideoDetail = ({video}) => {
 
 	if(!video) return <div>Loading...</div>
 
-	const url = video.snippet.thumbnails.high.url
+	const videoId = video.id.videoId
+	const videoUrl = `https://www.youtube.com/embed/${videoId}`
 
 	return (
 		<div className="video-detail col-md-8">
-			<div>
-				<img src={url}/>
+			<div className="embed-responsive embed-responsive-16by9">
+				<iframe className="embed-responsive-item" src={videoUrl}/>
 			</div>
 			
 			<div className="details">.
@@ -23,9 +24,6 @@ const VideoDetail = ({video}) => {
 export default VideoDetail
 
 
-/*<div className="embed-responsive embede-responsive-16by9">
-	<iframe className="embed-responsive-item" src={url}></iframe>
-</div>*/
 
 
 

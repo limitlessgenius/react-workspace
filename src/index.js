@@ -20,14 +20,14 @@ class App extends Component {
 		}
 		//Because constructor boots up automatically on an instance of App
 
-		this.videoSearch('TRUMP')
+		this.videoSearch('Kung Fury OST')
 	}
 
 	videoSearch(term) {
 		YTSearch({ key: API_KEY, term: term}, (videos) => {
 			this.setState({ 
 				videos: videos, 
-				selectedVideo: videos[0], 
+				selectedVideo: videos[0]
 			})
 		})
 	}
