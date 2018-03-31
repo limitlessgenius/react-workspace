@@ -1,25 +1,20 @@
-# ReduxSimpleStarter
+# React Media Portal Application
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+### React Web Application Nº 1
 
-### Getting Started
+This react application fetches video data from Youtube Google API, on a dynamic search bases, and allows for a selection of 5 videos per search. 
 
-There are two methods for getting started with this repo.
+In this react application, I've managed the concept of state in the overall App component and in the SearchBar component. 
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Top level parent communication down to children has been achieved through callback functions and redux nor flux have been utilized. 
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
+A minimal styling has been achieved through utilization of Bootstrap version 4. 
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+I've explored also the concept of controlled field component - where the value of an element is provided by state. 
 
-```
-> npm install
-> npm start
-```
+
+
+
+
+
+
